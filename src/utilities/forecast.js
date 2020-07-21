@@ -11,7 +11,7 @@ const currentWeather = (lat,lon,callback)=>{
             callback(body.error.info,undefined)
         }else{
             const data1 = body;        
-            callback(undefined,`${data1.current.weather_descriptions[0]}. It is currently ${data1.current.temperature} degrees out. It feels like ${data1.current.feelslike} degrees out`);
+            callback(undefined,`It is ${data1.current.weather_descriptions[0]}. It is currently ${data1.current.temperature} degrees out. It feels like ${data1.current.feelslike} degrees out`);
         }
     })
 }
