@@ -3,7 +3,8 @@ var express = require('express');
 var hbs = require('hbs');
 var app = express();
 const geoLocation = require('./utilities/geo-location');
-const currentWeather =require('./utilities/forecast')
+const currentWeather =require('./utilities/forecast');
+const port = process.env.PORT||3000;
 
 //Define path for express config
 const publicPathIndex = path.join(__dirname,'../public');
@@ -82,6 +83,6 @@ app.get('*',(req,res)=>{
 
 })
 
-app.listen('3000',()=>{
-    console.log('Port 3000 Listining');
+app.listen(port,()=>{
+    console.log('Port '+port+' Listining');
 })
