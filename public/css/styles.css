@@ -1,0 +1,21 @@
+h1{
+    color: #ccc;
+}
+img{
+    width: 300px;
+}
+.err_cls{
+color:red;
+}
+input{
+    border:1px solid #ccc;
+    padding: 8px;
+}
+button{
+    cursor: pointer;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    color: #fff;
+    padding: 8px;
+
+}

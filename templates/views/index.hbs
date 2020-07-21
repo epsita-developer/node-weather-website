@@ -1,0 +1,21 @@
+<!-- handlebar templates -->
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+<body>
+    {{>header}}
+    <p>{{body}}</p>
+    <form>
+        <input placeholder="Search here..">
+        <button>Search</button>
+    </form>
+    <p id="location"></p>
+    <p id="forecast"></p>
+    <p id="error-msg" class="err_cls"></p>
+    
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>
